@@ -1,2 +1,1 @@
-# interpretable-ml-class.github.io
-A course on interpretability and explainability in machine learning
+Webpage for Interpretable ML Course Offered by Prof. Hima Lakkaraju at Harvard University (Fall 2019). 

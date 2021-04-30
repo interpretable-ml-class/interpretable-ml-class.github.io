@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>COMPSCI 282BR: Interpretability and Explainability in Machine Learning</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="hima">
+	<style>
+		.center{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	</style>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<br/>
+					<h1 align="center"><font color="blue">Interpretability and Explainability in Machine Learning</font></h1>
+					<h3 align="center"><font color="green">COMPSCI 282BR, Harvard University</font></h3>
+
+					<h3 align="center">Fall 2019, Class: Friday 12:00pm - 2:30pm, Maxwell Dworkin G125</h3>
+					<br/>
+          			<!-- <img alt="" class="pull" src="./images/frontfig-cs330-v2.jpg" style="width: 100%">
+					<br/> -->
+          			<!--img alt="" class="pull-right" src="./images/CS333-Pull-v1.jpg" style="width: 100%"-->
+					<!--<div class="carousel slide" id="carousel-25687">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#carousel-25687"> </li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img alt="" align="left" src="./images/frontfig-cs333.png">
+						</div>
+          </div>
+          </div>-->
+					<h3><font color="blue">Overview:</font></h3>
+                <p align="justify">    As machine learning models are increasingly being employed to aid decision makers in high-stakes settings such as healthcare and criminal justice, it is important to ensure that the decision makers (end users) correctly understand and consequently trust the functionality of these models. This graduate level course aims to familiarize students with the recent advances in the emerging field of interpretable and explainable ML. In this course, we will review seminal position papers of the field, understand the notion of model interpretability and explainability, discuss in detail different classes of interpretable models (e.g., prototype based approaches, sparse linear models, rule based techniques, generalized additive models), post-hoc explanations (black-box explanations including counterfactual explanations and saliency maps), and explore the connections between interpretability and causality, debugging, and fairness. The course will also emphasize on various applications which can immensely benefit from model interpretability including criminal justice and healthcare. </p>
+
+					<h3><font color="blue">Format:</font></h3>
+					<p align="justify">
+					We will first review the fundamentals through lectures, readings, discussions, and assignments. There will be two homework assignments. 
+					After the first few lectures by the instructor, students will be expected
+					to present research papers in class. Students will also carry out a semester-long project
+					applying and extending ideas learnt in the course.
+
+					For further details about grading and course format, see <a href="https://canvas.harvard.edu/courses/68154/files/8447899/download/">this</a>. </p>
+					
+					 <!--See detailed <a
+                    href="#grading-policies">course policies.</a></p>-->
+					<h3><font color="blue">Prerequisites:</font></h3>
+					<p align="justify">Students are expected to be fluent in basic linear algebra, probability, algorithms, and machine learning (at the level of CS181). Students are also expected to have programming and software engineering skills to work with data sets using Python, numpy, and sklearn.</p>
+          <!--<h3>Enrollment:</h3>
+					<p>Please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNOgU5S_SIhk1A2W1tN82y17Bb1I7crIWoBjtKEC8tg3v2FQ/viewform">enrollment form</a> if you are interested in this course. See the form for more information on enrollment.</p>
+				</div>-->
+					<h3><font color="blue">Feedback:</font></h3>
+					<p align="justify">Please use this form to provide feedback about the course: <a href="https://forms.gle/s9WniBW6oV9PVBLV6">https://forms.gle/s9WniBW6oV9PVBLV6</a></p>
+
+				<div class="hrline"> <hr /> </div>
+				<div class="row clearfix">
+					<h3 align="center"> <font color="blue">Staff</font> </h3>
+					<br> <br>
+					<div class="row clearfix">
+						<div align="center" class="col-sm-6 col-sm-push-6">
+							<img class="img-thumbnail" src="images/ike.png" alt="Ike Lage" width="140" height="140">
+							<h4><font color="green"><b>Ike Lage</b></font></h4>
+							<h5>Teaching Fellow</h5>
+							<h5>Office Hours: Thursday 2:00pm - 3:00pm</h4>
+							<h5>Location: Maxwell Dworkin 337</h4>
+							<h5><a href="https://isaaclage.github.io/">Webpage</a></h5>
+						</div>
+						<div align="center" class="col-sm-6 col-sm-pull-6">
+							<img class="img-thumbnail" src="images/hima.png" alt="Hima Lakkaraju" width="160" height="160">
+							<h4><font color="green"><b>Hima Lakkaraju</b></font></h4>
+							<h5>Instructor</h5>
+							<h5>Office Hours: Tuesday 3:30pm - 4:30pm</h4>
+							<h5>Location: Maxwell Dworkin 337</h4>
+							<h5><a href="https://himalakkaraju.github.io/">Webpage</a> | <a href="https://twitter.com/hima_lakkaraju">Twitter</a></h5>
+            			</div>
+					</div>
+					
+				</div>
+				</div>
+
+				<div class="hrline"> <hr /> </div> <br>
+				<h3 id="topics"><font color="blue">Schedule:</font></h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th style="width: 15%">Date</th>
+							<th style="width: 23%">Topic</th>
+              				<th style="width: 23%">Readings</th>
+							<th style="width: 24%">Background Material</th>
+							<th style="width: 15%">Assignments / Deadlines</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr class="active">
+							<td><b>Week 1</b><br/> 
+								September 6
+							</td>
+							<td><font color="green"><b>Understanding Interpretability</b></font><br><a href="slides/Lecture_1.pptx">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1702.08608.pdf"> Doshi-Velez and Kim, 2017</a><br><a href="https://arxiv.org/pdf/1606.03490.pdf">Lipton, 2017</a><br><br>Additional Reading:<br><a href="https://arxiv.org/pdf/1708.01870.pdf">Weller, 2019</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 2</b><br/> 
+								September 13
+							</td>
+							<td><font color="green"><b>Evaluating Interpretability</b></font><br><a href="slides/Lecture_2.pptx">Slides</a> | Video</td>
+							<td><a href="https://canvas.harvard.edu/courses/68154/files?preview=8425514"> Lage et. al., 2019</a><br><a href="https://arxiv.org/pdf/1802.07810.pdf">Poursabzi-Sangdeh, 2018</a></td>
+							<td></td>
+							<td><font color="red"><a href="https://canvas.harvard.edu/courses/68154/files/folder/HW1?preview=8484057">HW1</a> out on 09/16</font></td>
+						</tr>
+
+
+					<tr class="active">
+							<td><b>Week 3</b><br/> 
+								September 20
+							</td>
+							<td><font color="green"><b>Rule Based Approaches</b></font><br><a href="slides/Lecture_3.pptx">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1511.01644.pdf"> Letham and Rudin, 2015</a><br><a href="https://www-cs-faculty.stanford.edu/people/jure/pubs/interpretable-kdd16.pdf">Lakkaraju et. al., 2016</a></td>
+							<td><a href="https://ermongroup.github.io/cs323-notes/probabilistic/mh/">Metropolis Hastings Algorithm</a><br><a href="https://las.inf.ethz.ch/files/krause12survey.pdf">Submodular Optimization</a><br>[Sections 1 & 2]</td>
+							<td><font color="red"><a href="https://canvas.harvard.edu/courses/68154/files/folder/Checkpoint_1_Templates?preview=8503883">CP1</a> due on 09/26</font></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 4</b><br/> 
+								September 27
+							</td>
+							<td><font color="green"><b>Prototype Based Approaches</b></font><br><a href="slides/Lecture_4.pptx">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1710.04806.pdf"> Li et. al., 2017</a><br><a href="https://beenkim.github.io/papers/KimRudinShahNIPS2014.pdf">Kim et. al., 2014</a></td>
+							<td><a href="https://ermongroup.github.io/cs323-notes/probabilistic/gibbs/">Gibbs Sampling</a></td>
+							<td><font color="red"><a href="https://canvas.harvard.edu/courses/68154/files/folder/HW2?preview=8592279">HW2</a> out on 09/30</font><br><font color="red">HW1 due on 10/03</font></td>
+						</tr>
+
+
+					<tr class="active">
+							<td><b>Week 5</b><br/> 
+								October 4
+							</td>
+							<td><font color="green"><b>Risk Scores &<br> Generalized Additive Models</b></font><br><a href="slides/Lecture_5.pptx">Slides</a> | Video</td>
+							<td><a href="https://canvas.harvard.edu/courses/68154/files/?preview=8630586"> Ustun and Rudin, 2017</a><br><a href="http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf">Caruana et. al., 2015</a></td>
+							<td><a href="https://www.cse.iitb.ac.in/~cs709/2015a/notes/readingAssignment/CuttingPlaneMethod.pdf">Cutting Plane Methods</a><br>[Section 7.1]<br>
+								<a href="https://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch13.pdf">Generalized Additive Models</a></td>
+							<td></td>
+						</tr>
+						
+					<tr>
+							<td><b>Week 6</b><br/> 
+								October 11
+							</td>
+						<td><font color="green"><b>Explaining Black-Box Models</b></font><br><a href="slides/Lecture_6.pptx">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1602.04938.pdf"> Ribeiro et. al., 2016</a><br><a href="https://arxiv.org/pdf/1811.10154.pdf">Rudin, 2019</a>
+								<br><br> Additional Reading: <br> <a href="https://arxiv.org/pdf/1710.10547.pdf">Ghorbani et. al., 2019</a>
+
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					<tr class="active">
+							<td><b>Week 7</b><br/> 
+								October 18
+							</td>
+						<td><font color="green"><b>Visualizing Model Behavior</b></font><br> <a href="slides/Lecture_7_parta.pptx">Slides 1</a> | <a href="slides/Lecture_7_partb.pdf">Slides 2</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1702.04595.pdf"> Zintgraf et. al., 2017</a><br><a href="https://papers.nips.cc/paper/8160-sanity-checks-for-saliency-maps.pdf">Adebayo et. al., 2018</a></td>
+							<td></td>
+							<td><font color="red">HW2 due on 10/22</font></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 8</b><br/> 
+								October 25
+							</td>
+						<td><font color="green"><b>Feature Importance Based Explanations</b></font><br><a href="slides/Lecture_8.pptx">Slides</a> | Video</td>
+							<td><a href="https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf"> Lundberg and Lee, 2017</a><br><a href="https://arxiv.org/pdf/1711.11279.pdf">Kim et. al., 2018</a></td>
+							<td></td>
+							<td><font color="red">CP2 due on 10/28</font></td>
+						</tr>
+
+					<tr class="active">
+							<td><b>Week 9</b><br/> 
+								November 1
+							</td>
+						<td><font color="green"><b>Actionable Explanations</b></font> <br> (Recourse) <br><a href="slides/Lecture_9.pdf">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1711.00399.pdf">Wachter et. al., 2018</a><br><a href="https://arxiv.org/pdf/1809.06514.pdf">Ustun et. al., 2018</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 10</b><br/> 
+								November 8
+							</td>
+						<td><font color="green"><b>Causal Models & Explanations</b></font> <br><a href="slides/Lecture_10.pdf">Slides</a> | Video</td>
+							<td><a href="https://web.stanford.edu/~hastie/Papers/pdp_zhao.pdf">Zhao and Hastie, 2018</a><br><a href="http://proceedings.mlr.press/v54/lakkaraju17a/lakkaraju17a.pdf">Lakkaraju and Rudin, 2017</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					<tr class="active">
+							<td><b>Week 11</b><br/> 
+								November 15
+							</td>
+							<td><font color="green"><b>Human-in-the-loop Models & Explanations</b></font> <br><a href="slides/Lecture_11.pdf">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1805.11571.pdf">Lage et. al., 2018</a><br><a href="https://web.stanford.edu/~himalv/customizable.pdf">Lakkaraju et. al., 2019</a></td>
+							<td></td>
+							<td><font color="red">CP3 due on 11/18</font></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 12</b><br/> 
+								November 22
+							</td>
+							<td><font color="green"><b>Connections with Debugging & Fairness</b></font> <br><a href="slides/Lecture_12.pdf">Slides</a> | Video</td>
+							<td><a href="https://arxiv.org/pdf/1703.04730.pdf">Koh and Liang, 2017</a><br><a href="https://arxiv.org/pdf/1809.04578.pdf">Kleinberg and Mullainathan, 2019</a></td>
+							<td></td>
+							<td></td>
+						</tr>
+					<tr class="active">
+							<td><b>Week 13</b><br/> 
+								November 29
+							</td>
+							<td colspan="2" align="center"><font color="red"><b>Thanksgiving Holiday</b></font></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					<tr>
+							<td><b>Week 14</b><br/> 
+								December 6
+							</td>
+							<td colspan="2" align="center"><font color="green"><b>Final Presentations</b></font></td>
+							<td></td>
+							<td><font color="red">Final report due on 12/09</font></td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<br>
+				<div class="hrline"> <hr /> </div>
+				<br>
+				</div>
+                
+			</div>
+		</div>
+		<br>
+
+
+		<!-- The footer -->
+		<div class="hrline"><hr></div><br>
+		<div class="row clearfix">
+			<div class="col-md-3 column">
+			</div>
+			<div class="col-md-6 column">
+				<div class = "text-center">
+					<p>
+					&nbsp;&nbsp;&nbsp; &#169; Hima Lakkaraju 2019
+					</p>
+				</div>
+			</div>
+			<div class="col-md-3 column">
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!-- End of document -->
+	</div>
+</body>
+</html>
+

@@ -1,1 +1,1 @@
-Webpage for Interpretable ML Course Offered by Prof. Hima Lakkaraju at Harvard University (Fall 2019). 
+Webpage for Explainable AI Course Offered by Prof. Hima Lakkaraju at Harvard University (Spring 2023). 
